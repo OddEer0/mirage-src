@@ -2,7 +2,7 @@ version: '3'
 
 env:
   PROTO_SRC: 'proto'
-  PROTO_FILES: '**/*.proto'
+  PROTO_FILES: 'proto/**/*.proto'
   PROTO_OUT: './protogen/'
 
 tasks:
