@@ -1,0 +1,11 @@
+version: '3'
+
+env:
+  PROTO_SRC: 'proto'
+  PROTO_FILES: '**/*.proto'
+  PROTO_OUT: './protogen/'
+
+tasks:
+  genrpc:
+    cmds:
+      - protoc -I $PROTO_SRC $PROTO_FILES --go_out=$PROTO_OUT --go_opt=paths=source_relative --go-grpc_out=$PROTO_OUT --go-grpc_opt=paths=source_relative

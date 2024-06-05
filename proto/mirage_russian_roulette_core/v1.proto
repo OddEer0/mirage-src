@@ -1,0 +1,5 @@
+syntax = "proto3";
+package russian_roulette_core_v1;
+option go_package = "github.com/OddEer0/mirage-src/protogen/mirage_russian_roulette_core";
+
+message Empty {}
